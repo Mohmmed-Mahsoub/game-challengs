@@ -1,0 +1,121 @@
+/* Start Global */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width:80%;
+    margin:auto;
+}
+
+/* End Global*/
+
+/* Start Show Case */
+.show-case {
+    background-image: url("../img/back.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.show-case .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    height: 100%;
+}
+.show-case .container .player-0,
+.show-case .container .player-1 {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-case .container .player-0 .cont-0,
+.show-case .container .player-1 .cont-1 {
+    text-transform: uppercase;
+    height: 100%;
+    font-size: 2rem;
+    padding-top: 5rem;
+}
+
+.show-case .container .player-0 .cont-0 .name-p-0,
+.show-case .container .player-1 .cont-1 .name-p-1 {
+    display: flex;
+    align-items: center;
+}
+
+.show-case .container .player-0 .cont-0 .current-score-0,
+.show-case .container .player-1 .cont-1 .current-score-1 {
+    position: relative;
+    top: 60%;
+}
+
+.show-case .container .current {
+    display: flex;
+    flex-direction: column;
+    background-color: #c52424;
+    color: #fff;
+    padding: 1rem 0;
+}
+.show-case .container .control {
+    position: absolute;
+    left: 40%;
+    font-size: 1rem;
+    width: 20%;
+    height: 95%;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.show-case .container .control .dice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show-case .container .control img {
+    width: 75px;
+    box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #ccc;
+}
+.show-case .container .control i {
+    color: #c52424;
+    font-size: 1.3rem;
+}
+.show-case .container .control .btn-hold {
+    position: relative;
+    bottom: 10%;
+}
+.show-case .container .control .btn-new:hover, .show-case .container .control .btn-roll:hover, .show-case .container .control .btn-hold:hover {
+    cursor: pointer;
+}
+.show-case .container .control input {
+    width: 70%;
+    height: 35px;
+    text-align: center;
+}
+
+.active {
+    background-color: #ddd !important;
+}
+.active .name {
+    display: flex;
+    align-items: center;
+}
+.active .active-sign {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.winner {
+    color: #c52424;
+}
+
+/* End Show Case */
